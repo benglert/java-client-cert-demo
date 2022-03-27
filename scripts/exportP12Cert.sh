@@ -1,0 +1,1 @@
+openssl pkcs12 -export -in /etc/nginx/certs/client.crt -inkey /etc/nginx/certs/client.key -out /etc/nginx/certs/client.p12 -name client-cert -CAfile /etc/nginx/certs/ca.crt -caname root -password pass:password

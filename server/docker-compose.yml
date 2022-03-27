@@ -1,0 +1,12 @@
+version: "2"
+services:
+  ngnix_1:
+    image: englert/tls-server
+    build: .
+    ports:
+      - "8090:443"
+      - "8089:80"
+    volumes:
+      - ./html:/var/www/html/
+      - ./certs:/etc/nginx/certs
+
